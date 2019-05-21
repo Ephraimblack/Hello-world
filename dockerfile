@@ -1,6 +1,6 @@
 FROM hshar/ubuntunew1212
 
-ADD major /var/www/html
+ADD Major /var/www/html
 
 CMD apachect1 -D FOREGROUND
 
