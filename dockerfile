@@ -1,4 +1,4 @@
-FROM hshar/ubuntunew1212
+FROM hshar/ubuntu
 
 ADD Major /var/www/html
 
