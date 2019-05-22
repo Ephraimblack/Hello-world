@@ -2,7 +2,7 @@ FROM ubuntu
 
 ADD major /var/www/html
 
-EXPOSE 8080
+EXPOSE 25
 
 CMD apachect1 -D FOREGROUND
 
