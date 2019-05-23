@@ -1,4 +1,4 @@
-FROM httpd:2.4
+FROM ubuntu:latest
 ADD major /var/www/html/
 EXPOSE 80
 CMD apachect1 -D FOREGROUND
