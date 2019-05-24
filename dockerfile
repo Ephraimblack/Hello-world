@@ -1,4 +1,4 @@
-FROM hshar/ubuntunew1212
+FROM espada1/ubuntu-apache 
 ADD major /var/www/html/
 EXPOSE 80
 CMD apachect1 -D FOREGROUND
