@@ -1,5 +1,5 @@
-FROM espada1/ubuntu-apache
-COPY ./major /var/www/html/
+FROM httpd:latest
+COPY major /usr/local/apache2/htdocs
 EXPOSE 80
-CMD apachect1 -D FOREGROUND
-RUN rm /var/www/html/index.html
+CMD apachectl -D FOREGROUND
+RUN rm /usr/local/apache2/htdocs/index.html
