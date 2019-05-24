@@ -1,4 +1,4 @@
-FROM espada1/ubuntu-apache 
+FROM ubuntu 
 RUN apt-get update
 RUN apt-get install apache -y
 mkdir /var/www/html/hokagetravels/
