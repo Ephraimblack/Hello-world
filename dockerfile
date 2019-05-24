@@ -1,5 +1,8 @@
-FROM httpd:latest
-COPY major /usr/local/apache2/htdocs/
-EXPOSE 8000
+FROM espada1/ubuntu-apache 
+RUN apt-get update
+RUN apt-get install apache -y
+mkdir /var/www/html/hokagetravels/
+COPY major /var/www/html/hokagetravels/
+EXPOSE 5000
 CMD apachectl -D FOREGROUND
-RUN rm /usr/local/apache2/htdocs/services.html
+RUN rm /var/www/html/hokagetravels/index.html
